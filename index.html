@@ -5,33 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What to Watch</title>
+    <!-- This is linking bulma to our webpage-->
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css"> 
+
+        
+        <!-- This is linking fontawesome to our webpage -->
+          <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+      <link rel="stylesheet" href="styles/styles.css">
+
+      <!--this is just some basic centering content vertically and horizontally-->
+      <style>
+          
+        .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .emoticon { white-space: pre; }
+        </style>
+
   </head>
-  <body>
-    <header>add logo here</header>
-    <div>
-      <p>add description here</p>
+
+
+<body>
+   <!-- .hero -->
+		<section class="hero">
+			<div class="hero-body">
+				<div class="container">
+					<figure class="image center">
+						<img src="styles/images/Screen Shot 2022-12-02 at 5.15.28 PM.png" style="max-width: 800px; max-height: 200px; margin-block: 0px;">
+					</figure>
+				</div>
+			</div>
+		</section>
+		<!-- /.hero -->
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-success">
+              <p class="title">Pick a Genre</p>
+              <p class="subtitle"> < Horror Comedy Action SciFi Drama > "This will all be in a select drop down form"
+              </p>
+            </article>
+            <article class="tile is-child notification is-danger">
+              <p class="title">Pick by Rating</p>
+              <p class="subtitle">1 star 2 stars 3 stars 4 stars 5 stars < this will also be select drop down form> </this></p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-dark">
+              <p class="title">Possible GIF selector for movie that was chosen??? or image</p>
+              <p class="subtitle">With an image or gif</p>
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/640x480.png">
+              </figure>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-dark">
+          <div class="content">
+            <p class="title">Movie Selected....</p>
+            <p class="subtitle">Here the movie that was selected could be displayed, with images or text. Brief description.... possibly links, or suggested streaming platforms.</p>
+            <div class="content">
+              <!-- Content -->
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
-    <form action="#">
-      <label for="genre">Genre:</label>
-      <select name="genre" id="genre">
-        <option value="all-genres">All</option>
-        <option value="comedy">Comedy</option>
-        <option value="romance">Romance</option>
-      </select>
-      <br /><br />
-    </form>
-    <form action="#">
-      <label for="rating">Rating:</label>
-      <select name="rating" id="rating">
-        <option value="all-ratings">All</option>
-        <option value="1-star">1 Star+</option>
-        <option value="2-stars">2 Stars+</option>
-        <option value="3-star">3 Stars+</option>
-        <option value="4-stars">4 Stars+</option>
-      </select>
-      <br /><br />
-    </form>
-    <button>Search</button>
-    <footer>add random movie quote here</footer>
+       
   </body>
 </html>
