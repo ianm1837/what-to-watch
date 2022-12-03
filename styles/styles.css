@@ -1,13 +1,12 @@
-.hero {
-    font: 500 1.7em/2 "Playfair";
+body {
+    font: 400 1em/1.5 "Neuton";
     background: #090d00;
-    color: rgba(255, 255, 255, 0.74);
-    letter-spacing: .2em;
+    color: rgba(255, 255, 255, .25);
     text-align: center;
     margin: 0;
 }
 
-p header {
+p {
     text-transform: uppercase;
     letter-spacing: .5em;
     display: inline-block;
@@ -29,16 +28,23 @@ span {
     margin: 0 auto;
   	text-shadow: 0 0 80px rgba(255,255,255,.5);
      
-      background: url(https://media.gettyimages.com/id/165499132/vector/curvy-filmstrip-vector.jpg?s=612x612&w=gi&k=20&c=J4rPcrQizC89vdpJbKvnTLM3hXj93nCM9aE3NcMHpg8=) repeat-y;
-	  -webkit-background-clip: text;
-	  background-clip: text;
+      
+}
 
-      -webkit-text-fill-color: transparent;
-	  -webkit-animation: aitf 80s linear infinite;
-      animation: aitf 80s linear infinite;
-
-      -webkit-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-	  -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
+#btn-container {
+    text-transform: uppercase;
+    width: 230px;
+   color: rgba(255, 255, 255, 0.299);
+   background-color: black;
+    padding: 10px;
+    margin: 400px;
+    border-radius: 5px;
+    border: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
+    cursor: pointer;
 }

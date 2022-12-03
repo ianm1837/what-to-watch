@@ -1,97 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>What to Watch</title>
-    <!-- This is linking bulma to our webpage-->
-    <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css"> 
-        <!-- This is linking Google fonts to our webpage-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-        
-        <!-- This is linking fontawesome to our webpage -->
-          <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-      <link rel="stylesheet" href="./styles/styles.css">
-
-      <!--this is just some basic centering content vertically and horizontally-->
-      <style>
-          
-        .center {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .emoticon { white-space: pre; }
-        </style>
-
-  </head>
-
-
+    <!--CDN link to bulma -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+   <!--Link to my css-->
+   <link rel="stylesheet" href="./styles/styles.css">
+    <title>What to Watch: Random Movie Generator</title>
+</head>
 <body>
-   <!-- .hero -->
-		<section class="hero">
-			<div class="hero-body">
-				<div class="container">
-					<figure class="image center">
-            <p id="header">
-              Mix up movie night
-              <span>
-                What to Watch
-              </span>
-              &mdash; Random movie generator &mdash;
-            </p> 
-					</figure>
-				</div>
-			</div>
-		</section>
-		<!-- /.hero -->
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-8">
-        <div class="tile">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child notification is-success">
-              <p class="title">Pick a Genre</p>
-              <p class="subtitle"> < Horror Comedy Action SciFi Drama > "This will all be in a select drop down form"
-              </p>
-            </article>
-            <article class="tile is-child notification is-danger">
-              <p class="title">Pick by Rating</p>
-              <p class="subtitle">1 star 2 stars 3 stars 4 stars 5 stars < this will also be select drop down form> </this></p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article id="showcase" class="tile is-child notification is-dark" hidden>
-              <p class="title">Possible GIF selector for movie that was chosen??? or image</p>
-              <p class="subtitle">With an image or gif</p>
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/640x480.png">
-              </figure>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-dark">
-          <div class="content">
-            <p class="title">Movie Selected....</p>
-            <p class="subtitle">Here the movie that was selected could be displayed, with images or text. Brief description.... possibly links, or suggested streaming platforms.</p>
-            <div class="content">
-              <!-- Content -->
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-       
-	<script src="/js/script.js"></script>
-  </body>
+  <!--Main header/logo-->
+  <header>
+  <p>
+    <span>What to Watch</span>
+    &mdash; Random movie generator &mdash;
+  </p> 
+</header>
+<!--Button leading to 'checkbox' page-->
+<button id="btn-container" class="button is-large is-responsive is-rounded">Find Your Movie</button>
+ 
+</body>
 </html>
