@@ -11,21 +11,30 @@
         <!--CDN link to bulma -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
    <!--Link to my css-->
-   <link rel="stylesheet" href="./assets/style.css">
+   <link rel="stylesheet" href="./styles/styles.css">
     <title>What to Watch: Random Movie Generator</title>
 </head>
 <body>
-    <h2 id="second-page-header">You've Got Three Options...</h2>
-    <h2 class="container is-flex-wrap">Any Specific Genre?</h2>
+
+  <div class="container is-flex-wrap has-text-centered">
+      <h2 id="second-page-header">You've Got Three Options...</h2>
+  </div>
+   
+  <div class="container is-flex-wrap has-text-centered">
+    <h2>Any Specific Genre?</h2>
     <ul>
-    <li><label class="checkbox"><input type="checkbox">Action</label></li>
-    <li><label class="checkbox"><input type="checkbox">SciFi</label></li>
-    <li><label class="checkbox"><input type="checkbox">Comedy</label></li>
-    <li><label class="checkbox"><input type="checkbox">Horror</label></li>
-    <li><label class="checkbox"><input type="checkbox">Drama</label></li>
-    <li><label class="checkbox"><input type="checkbox">No Thanks</label></li>
+    <li><label class="checkbox"><input id="action" type="checkbox">Action</label></li>
+    <li><label class="checkbox"><input id="scifi" type="checkbox">SciFi</label></li>
+    <li><label class="checkbox"><input id="comedy" type="checkbox">Comedy</label></li>
+    <li><label class="checkbox"><input id="horror" type="checkbox">Horror</label></li>
+    <li><label class="checkbox"><input id="drama" type="checkbox">Drama</label></li>
+    <li><label class="checkbox"><input id="nothanks" type="checkbox">No Thanks</label></li>
 </ul>
-<h1 class="container is-flex-wrap">Any Specific Rating?</h1>
+</div>
+
+
+<div class="container is-flex-wrap has-text-centered">
+<h2>Any Specific Rating?</h2>
     <ul>
     <li><label class="checkbox"><input type="checkbox">*</label></li>
     <li><label class="checkbox"><input type="checkbox">**</label></li>
@@ -35,11 +44,25 @@
     <li><label class="checkbox"><input type="checkbox">Doesn't Matter</label></li>
 </ul>
 </div>
-<h2 class="container is-flex-wrap">Choose from IMDB's Top 100?</h2>
-    <ul>
-    <li><label class="checkbox"><input type="checkbox">Yes</label></li>
-    <li><label class="checkbox"><input type="checkbox">No</label></li>
-</ul>
+
+
+
+<div class="control has-text-centered">
+  <h2>Choose from IMDB's Top 100?</h2>
+  <label class="radio">
+    <input id="top-100-yes" type="radio" name="answer">
+    Yes
+  </label>
+  <label class="radio">
+    <input id="top-100-no"  type="radio" name="answer">
+    No
+  </label>
+</div>
+
+
+
+<div class="container has-text-centered">
 <button id="btn-container" class="button is-large is-responsive is-rounded">Find Your Movie</button>
+</div>
 </body>
 </html>

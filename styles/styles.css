@@ -1,80 +1,41 @@
 body {
-<<<<<<< HEAD
     background-color: black;
+    color: white;
 }
+
 #second-page-header{
     margin: 25px;
     font-family: 'Oswald', sans-serif;
     color: rgba(255,255,255,.25);
-    font-size: 38px;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'oswald', sans-serif;
+    font-size: 30px;
 }
 
 .container {
-    display: flex;
-    text-align: center;
-    margin: 350px;
     font-family: 'Oswald', sans-serif;
-    color: rgba(255,255,255,.25);
+    font-size: 20px;
+    padding: 30px;
 }
 
 ul {
-    margin: 350px;
+    list-style: none;
 }
 
-.checkbox {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-=======
-    font: 400 1em/1.5 "Neuton";
-    background: #090d00;
-    color: rgba(255, 255, 255, .25);
-    text-align: center;
-    margin: 0;
-}
-
-p {
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    display: inline-block;
-	border: 4px double rgba(255,255,255,.25);
-	border-width: 4px 0;
-	padding: 1.5em 0em;
-	position: absolute;
-	top: 18%;
-	left: 50%;
-	width: 40em;
-	margin: 0 0 0 -20em;
-}
-
-span {
-    font: 700 4em/1 "Oswald", sans-serif;
-    letter-spacing: 0;
-    padding: .25em 0 .325em;
-    display: block;
-    margin: 0 auto;
-  	text-shadow: 0 0 80px rgba(255,255,255,.5);
-     
-      
->>>>>>> dev
-}
 
 #btn-container {
+    padding: 30px;
     text-transform: uppercase;
     width: 230px;
    color: rgba(255, 255, 255, 0.299);
    background-color: black;
-<<<<<<< HEAD
-    padding: 5px;
-    margin: 17px;
-=======
-    padding: 10px;
-    margin: 400px;
->>>>>>> dev
     border-radius: 5px;
     border: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
