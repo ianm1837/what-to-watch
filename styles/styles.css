@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+#second-page-header{
+    margin: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255,255,255,.25);
+    font-size: 38px;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    margin: 350px;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255,255,255,.25);
+}
+
+ul {
+    margin: 350px;
+}
+
+.checkbox {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+#btn-container {
+    text-transform: uppercase;
+    width: 230px;
+   color: rgba(255, 255, 255, 0.299);
+   background-color: black;
+    padding: 5px;
+    margin: 17px;
+    border-radius: 5px;
+    border: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
+    cursor: pointer;
+}
