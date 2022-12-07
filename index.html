@@ -31,11 +31,11 @@
   <div class="container is-flex-wrap has-text-centered">
     <h2>Choose By Genre</h2>
     <ul>
-    <li><label class="checkbox"><input id="action" type="checkbox"> Action</label></li>
-    <li><label class="checkbox"><input id="scifi" type="checkbox"> SciFi</label></li>
-    <li><label class="checkbox"><input id="comedy" type="checkbox"> Comedy</label></li>
-    <li><label class="checkbox"><input id="horror" type="checkbox"> Horror</label></li>
-    <li><label class="checkbox"><input id="drama" type="checkbox"> Drama</label></li>
+    <li><label class="checkbox"><input id="action" type="radio" checked> Action</label></li>
+    <li><label class="checkbox"><input id="scifi" type="radio"> SciFi</label></li>
+    <li><label class="checkbox"><input id="comedy" type="radio"> Comedy</label></li>
+    <li><label class="checkbox"><input id="horror" type="radio"> Horror</label></li>
+    <li><label class="checkbox"><input id="drama" type="radio"> Drama</label></li>
     <!--<li><label class="checkbox"><input id="nothanks" type="checkbox"> No Thanks</label></li>  IS THIS 'NO THANKS' BOX NEEDED?-->
 </ul>
 </div>
@@ -44,11 +44,11 @@
 <div class="container is-flex-wrap has-text-centered">
 <h2>Choose By Rating</h2>
     <ul>
-    <li><label class="checkbox"><input type="checkbox"> *</label></li>
-    <li><label class="checkbox"><input type="checkbox"> **</label></li>
-    <li><label class="checkbox"><input type="checkbox"> ***</label></li>
-    <li><label class="checkbox"><input type="checkbox"> ****</label></li>
-    <li><label class="checkbox"><input type="checkbox"> *****</label></li>
+    <li><label class="checkbox"><input id="one-star" type="radio" checked> *</label></li>
+    <li><label class="checkbox"><input id="two-star" type="radio"> **</label></li>
+    <li><label class="checkbox"><input id="three-star" type="radio"> ***</label></li>
+    <li><label class="checkbox"><input id="four-star" type="radio"> ****</label></li>
+    <li><label class="checkbox"><input id="five-star" type="radio"> *****</label></li>
     <!--<li><label class="checkbox"><input type="checkbox"> Doesn't Matter</label></li> IS THIS 'DOESN'T MATTER' BOX NEEDED?-->
 </ul>
 </div>
@@ -62,7 +62,7 @@
     Yes
   </label>
   <label class="radio">
-    <input id="top-100-no"  type="radio" name="answer">
+    <input id="top-100-no"  type="radio" name="answer" checked>
     No
   </label>
 </div>
@@ -70,7 +70,8 @@
 
 
 <div class="container-btn is-flex-wrap has-text-centered">
-<button id="btn-container" class="button is-large is-responsive is-rounded">Find Your Movie</button>
+<button id="submit-button" class="button is-large is-responsive is-rounded">Find Your Movie</button>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
