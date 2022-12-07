@@ -54,6 +54,8 @@ h2 {
     padding: 25px;
 }
 .container {
+    padding-top: 30px;
+    padding-bottom: 50px;
     font-family: 'Oswald', sans-serif;
     color: rgba(255, 255, 255, 0.299);
     font-size: 30px;
