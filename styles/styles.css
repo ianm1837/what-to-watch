@@ -1,24 +1,23 @@
 body {
     background-color: black;
-    color: white;
 }
 
 #second-page-header{
     margin: 25px;
-    font-family: 'oswald', sans-serif;
-    color: rgba(255, 255, 255, 0.299);
+    font-family: 'Playfair Display SC', serif;
+    color: #dc2026;
     font-size: 60px;
     text-transform: uppercase;
     border-bottom: solid rgba(255, 255, 255, 0.299);
     margin-top: 15px;
     margin-bottom: 15px;
-    box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
+   
 }
 
 h2 {
-    font-family: 'oswald', sans-serif;
+    font-family: 'Playfair Display SC', serif;
     text-transform: uppercase;
-    color: #b22222;
+    color: rgba(255, 255, 255, 0.511);
     font-size: 35px;
 }
 
@@ -73,6 +72,7 @@ ul {
 .radio {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
+    width: 170px;
     border-bottom: solid rgba(255, 255, 255, 0.299);
     box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
     
