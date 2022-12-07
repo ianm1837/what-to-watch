@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<!--Link to Neuton font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@700&display=swap" rel="stylesheet">
         <!--CDN link to bulma -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
    <!--Link to my css-->
@@ -16,38 +20,38 @@
 </head>
 <body>
 
-  <div class="container is-flex-wrap has-text-centered">
-      <h2 id="second-page-header">You've Got Three Options...</h2>
+  <div class="container-header is-flex-wrap has-text-centered">
+      <h2 id="second-page-header">What to Watch</h2>
   </div>
    
   <div class="container is-flex-wrap has-text-centered">
-    <h2>Any Specific Genre?</h2>
+    <h2>Choose By Genre</h2>
     <ul>
-    <li><label class="checkbox"><input id="action" type="checkbox">Action</label></li>
-    <li><label class="checkbox"><input id="scifi" type="checkbox">SciFi</label></li>
-    <li><label class="checkbox"><input id="comedy" type="checkbox">Comedy</label></li>
-    <li><label class="checkbox"><input id="horror" type="checkbox">Horror</label></li>
-    <li><label class="checkbox"><input id="drama" type="checkbox">Drama</label></li>
-    <li><label class="checkbox"><input id="nothanks" type="checkbox">No Thanks</label></li>
+    <li><label class="checkbox"><input id="action" type="checkbox"> Action</label></li>
+    <li><label class="checkbox"><input id="scifi" type="checkbox"> SciFi</label></li>
+    <li><label class="checkbox"><input id="comedy" type="checkbox"> Comedy</label></li>
+    <li><label class="checkbox"><input id="horror" type="checkbox"> Horror</label></li>
+    <li><label class="checkbox"><input id="drama" type="checkbox"> Drama</label></li>
+    <!--<li><label class="checkbox"><input id="nothanks" type="checkbox"> No Thanks</label></li>  IS THIS 'NO THANKS' BOX NEEDED?-->
 </ul>
 </div>
 
 
 <div class="container is-flex-wrap has-text-centered">
-<h2>Any Specific Rating?</h2>
+<h2>Choose By Rating</h2>
     <ul>
-    <li><label class="checkbox"><input type="checkbox">*</label></li>
-    <li><label class="checkbox"><input type="checkbox">**</label></li>
-    <li><label class="checkbox"><input type="checkbox">***</label></li>
-    <li><label class="checkbox"><input type="checkbox">****</label></li>
-    <li><label class="checkbox"><input type="checkbox">*****</label></li>
-    <li><label class="checkbox"><input type="checkbox">Doesn't Matter</label></li>
+    <li><label class="checkbox"><input type="checkbox"> *</label></li>
+    <li><label class="checkbox"><input type="checkbox"> **</label></li>
+    <li><label class="checkbox"><input type="checkbox"> ***</label></li>
+    <li><label class="checkbox"><input type="checkbox"> ****</label></li>
+    <li><label class="checkbox"><input type="checkbox"> *****</label></li>
+    <!--<li><label class="checkbox"><input type="checkbox"> Doesn't Matter</label></li> IS THIS 'DOESN'T MATTER' BOX NEEDED?-->
 </ul>
 </div>
 
 
 
-<div class="control has-text-centered">
+<div class="control is-flex-wrap has-text-centered">
   <h2>Choose from IMDB's Top 100?</h2>
   <label class="radio">
     <input id="top-100-yes" type="radio" name="answer">
@@ -61,7 +65,7 @@
 
 
 
-<div class="container has-text-centered">
+<div class="container-btn is-flex-wrap has-text-centered">
 <button id="btn-container" class="button is-large is-responsive is-rounded">Find Your Movie</button>
 </div>
 </body>

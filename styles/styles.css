@@ -5,32 +5,97 @@ body {
 
 #second-page-header{
     margin: 25px;
-    font-family: 'Oswald', sans-serif;
-    color: rgba(255,255,255,.25);
-    font-size: 50px;
+    font-family: 'oswald', sans-serif;
+    color: rgba(255, 255, 255, 0.299);
+    font-size: 60px;
+    text-transform: uppercase;
+    border-bottom: solid rgba(255, 255, 255, 0.299);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
 }
 
 h2 {
     font-family: 'oswald', sans-serif;
-    font-size: 30px;
+    text-transform: uppercase;
+    color: #b22222;
+    font-size: 35px;
 }
 
+.container-header {
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 0.299);
+    font-size: 30px;
+    padding: 25px;
+}
 .container {
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    padding: 30px;
+    color: rgba(255, 255, 255, 0.299);
+    font-size: 30px;
+    padding: 50px;
+    border-bottom: solid rgba(255, 255, 255, 0.299);
+    box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
 }
+
+
+input[type="checkbox"] {
+    background-color: black;
+    margin: 0;
+    font: inherit;
+    color: rgba(255, 255, 255, 0.299);
+    width: .5em;
+    height: .5em;
+    border: 0.15em solid rgba(255, 255, 255, 0.299);
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+        transition: box-shadow .3s;
+        background: rgba(255, 255, 255, 0.299);
+        /* more style */
+      }
+      input:checked { 
+        box-shadow: inset 0 0 0 20px rgb(199, 12, 31);
+      }
+
 
 ul {
     list-style: none;
 }
 
+.control {
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 0.299);
+    font-size: 30px;
+    padding: 25px;
+    padding-bottom: 50px;
+  
+}
+
+.radio {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    border-bottom: solid rgba(255, 255, 255, 0.299);
+    box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
+    
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: .5em;
+    height: .5em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+  }
 
 #btn-container {
     padding: 30px;
     text-transform: uppercase;
     width: 230px;
-   color: rgba(255, 255, 255, 0.299);
+   color: rgba(255, 255, 255, 0.57);
    background-color: black;
     border-radius: 5px;
     border: white;
