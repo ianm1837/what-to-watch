@@ -123,8 +123,8 @@ input[type="radio"] {
     /* padding: 30px; */
     text-transform: uppercase;
     width: 230px;
-	color: rgba(255, 255, 255, 0.57);
-	background-color: black;
+	color: rgba(255,255,255,.25);
+	background-color: #090d00;
     border-radius: 5px;
     border: white;
     text-align: center;
