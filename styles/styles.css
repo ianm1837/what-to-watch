@@ -1,5 +1,33 @@
 body {
-    background-color: black;
+    font: 400 1em/1.5 "Neuton";
+    background: #090d00;
+    color: rgba(255, 255, 255, .25);
+    text-align: center;
+    margin: 0;
+	min-height: 100vh;
+}
+
+p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+}
+
+span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+	text-shadow: 0 0 80px rgba(255,255,255,.5)
 }
 
 #second-page-header{
@@ -11,27 +39,28 @@ body {
     border-bottom: solid rgba(255, 255, 255, 0.299);
     margin-top: 15px;
     margin-bottom: 15px;
-   
 }
 
 h2 {
-    font-family: 'Playfair Display SC', serif;
-    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
     color: rgba(255, 255, 255, 0.511);
     font-size: 35px;
 }
 
 .container-header {
+    margin-bottom: 450px;
     font-family: 'Oswald', sans-serif;
     color: rgba(255, 255, 255, 0.299);
     font-size: 30px;
     padding: 25px;
 }
+
 .container {
+    padding-top: 30px;
+    padding-bottom: 50px;
     font-family: 'Oswald', sans-serif;
     color: rgba(255, 255, 255, 0.299);
     font-size: 30px;
-    padding: 50px;
     border-bottom: solid rgba(255, 255, 255, 0.299);
     box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
 }
@@ -47,13 +76,13 @@ input[type="checkbox"] {
     border: 0.15em solid rgba(255, 255, 255, 0.299);
     border-radius: 0.15em;
     transform: translateY(-0.075em);
-        transition: box-shadow .3s;
-        background: rgba(255, 255, 255, 0.299);
-        /* more style */
-      }
-      input:checked { 
-        box-shadow: inset 0 0 0 20px rgb(199, 12, 31);
-      }
+    transition: box-shadow .3s;
+    background: rgba(255, 255, 255, 0.299);
+}
+
+input:checked { 
+    box-shadow: inset 0 0 0 20px rgb(199, 12, 31);
+}
 
 
 ul {
@@ -66,7 +95,6 @@ ul {
     font-size: 30px;
     padding: 25px;
     padding-bottom: 50px;
-  
 }
 
 .radio {
@@ -75,7 +103,6 @@ ul {
     width: 170px;
     border-bottom: solid rgba(255, 255, 255, 0.299);
     box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
-    
 }
 
 input[type="radio"] {
@@ -89,14 +116,15 @@ input[type="radio"] {
     border: 0.15em solid currentColor;
     border-radius: 0.15em;
     transform: translateY(-0.075em);
-  }
+}
 
-#btn-container {
-    padding: 30px;
+#first-button,
+#second-button {
+    /* padding: 30px; */
     text-transform: uppercase;
     width: 230px;
-   color: rgba(255, 255, 255, 0.57);
-   background-color: black;
+	color: rgba(255, 255, 255, 0.57);
+	background-color: black;
     border-radius: 5px;
     border: white;
     text-align: center;
@@ -105,4 +133,8 @@ input[type="radio"] {
     font-size: 30px;
     box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
     cursor: pointer;
+}
+
+.landing-page-padding {
+	padding-top: 5rem;
 }
