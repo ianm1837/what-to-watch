@@ -4,74 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Link to google fonts-->
+    
+	<!--Link to google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<!--Link to playfair font-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
-        <!--CDN link to bulma -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
-   <!--Link to my css-->
-   <link rel="stylesheet" href="./styles/styles.css">
+	<!--CDN link to bulma -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+	<!--Link to my css-->
+	<link rel="stylesheet" href="./styles/styles.css">
     <title>What to Watch: Random Movie Generator</title>
 </head>
-<body>
-  <header>
-  <div class="container-header is-flex-wrap has-text-centered">
-    <p><span>What to Watch</span>&mdash; Random movie generator &mdash;</p> 
-  </header>
-  </div>
-   
-  <div class="container is-flex-wrap has-text-centered">
-    <h2>Choose By Genre</h2>
-    <ul>
-    <li><label class="checkbox"><input id="action" type="checkbox"> Action</label></li>
-    <li><label class="checkbox"><input id="scifi" type="checkbox"> SciFi</label></li>
-    <li><label class="checkbox"><input id="comedy" type="checkbox"> Comedy</label></li>
-    <li><label class="checkbox"><input id="horror" type="checkbox"> Horror</label></li>
-    <li><label class="checkbox"><input id="drama" type="checkbox"> Drama</label></li>
-    <!--<li><label class="checkbox"><input id="nothanks" type="checkbox"> No Thanks</label></li>  IS THIS 'NO THANKS' BOX NEEDED?-->
-</ul>
-</div>
+	<body>
+		<div class="container-header is-flex-wrap has-text-centered">
+			<p><span>What to Watch</span>&mdash; Random movie generator &mdash;</p>
+		</div>
+	
+		<div id="genre-select" class="container is-flex-wrap has-text-centered is-hidden">
+			<h2>Choose By Genre</h2>
+				<ul>
+					<li><label class="checkbox"><input id="action" type="radio"> Action</label></li>
+					<li><label class="checkbox"><input id="scifi" type="radio"> SciFi</label></li>
+					<li><label class="checkbox"><input id="comedy" type="radio"> Comedy</label></li>
+					<li><label class="checkbox"><input id="horror" type="radio"> Horror</label></li>
+					<li><label class="checkbox"><input id="drama" type="radio"> Drama</label></li>
+				</ul>
+		</div>
 
 
-<div class="container is-flex-wrap has-text-centered">
-<h2>Choose By Rating</h2>
-    <ul>
-    <li><label class="checkbox"><input type="checkbox"> * Star</label></li>
-    <li><label class="checkbox"><input type="checkbox"> ** Stars</label></li>
-    <li><label class="checkbox"><input type="checkbox"> *** Stars</label></li>
-    <li><label class="checkbox"><input type="checkbox"> **** Stars</label></li>
-    <li><label class="checkbox"><input type="checkbox"> ***** Stars</label></li>
-    <!--<li><label class="checkbox"><input type="checkbox"> Doesn't Matter</label></li> IS THIS 'DOESN'T MATTER' BOX NEEDED?-->
-</ul>
-</div>
+		<div id="rating-select" class="container is-flex-wrap has-text-centered is-hidden">
+		<h2>Choose By Rating</h2>
+			<ul>
+				<li><label class="checkbox"><input type="radio"> * Star</label></li>
+				<li><label class="checkbox"><input type="radio"> ** Stars</label></li>
+				<li><label class="checkbox"><input type="radio"> *** Stars</label></li>
+				<li><label class="checkbox"><input type="radio"> **** Stars</label></li>
+				<li><label class="checkbox"><input type="radio"> ***** Stars</label></li>
+			</ul>
+		</div>
 
-
-
-<div class="control is-flex-wrap has-text-centered">
-  <h2>Choose from IMDB's Top 100?</h2>
-  <label class="radio">
-    <input id="top-100-yes" type="radio" name="answer">
-    Yes
-  </label>
-  <label class="radio">
-    <input id="top-100-no"  type="radio" name="answer">
-    No
-  </label>
-</div>
+		<div id="top-100-select" class="control is-flex-wrap has-text-centered is-hidden">
+			<h2>Choose from IMDB's Top 100?</h2>
+			<label class="radio">
+				<input id="top-100-yes" type="radio" name="answer">
+				Yes
+			</label>
+			<label class="radio">
+				<input id="top-100-no"  type="radio" name="answer">
+				No
+			</label>
+		</div>
 
 
 
-<div class="container-btn is-flex-wrap has-text-centered">
-<button id="btn-container" class="button is-large is-responsive is-rounded">Find Your Movie</button>
-</div>
-</body>
+		<div class="container-btn is-flex-wrap has-text-centered">
+			<button id="first-button" class="button is-large is-responsive is-rounded mt-6">Find Your Movie</button>
+			<button id="second-button" class="button is-large is-responsive is-rounded is-hidden">Find Your Movie</button>
+		</div>
+	</body>
 </html>
