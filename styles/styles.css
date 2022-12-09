@@ -15,7 +15,7 @@ p {
 	border-width: 4px 0;
 	padding: 1.5em 0em;
 	position: absolute;
-	top: 18%;
+	top: 10%;
 	left: 50%;
 	width: 40em;
 	margin: 0 0 0 -20em;
@@ -30,18 +30,8 @@ span {
 	text-shadow: 0 0 80px rgba(255,255,255,.5)
 }
 
-#second-page-header{
-    margin: 25px;
-    font-family: 'Playfair Display SC', serif;
-    color: #dc2026;
-    font-size: 60px;
-    text-transform: uppercase;
-    border-bottom: solid rgba(255, 255, 255, 0.299);
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
 h2 {
+    text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     color: rgba(255, 255, 255, 0.511);
     font-size: 35px;
@@ -56,8 +46,9 @@ h2 {
 }
 
 .container {
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
     font-family: 'Oswald', sans-serif;
     color: rgba(255, 255, 255, 0.299);
     font-size: 30px;
@@ -84,7 +75,6 @@ input:checked {
     box-shadow: inset 0 0 0 20px rgb(199, 12, 31);
 }
 
-
 ul {
     list-style: none;
 }
@@ -100,31 +90,20 @@ ul {
 .radio {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
-    width: 170px;
+    width: 140px;
+    height: 50px;
     border-bottom: solid rgba(255, 255, 255, 0.299);
     box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
-}
-
-input[type="radio"] {
-    appearance: none;
-    background-color: #fff;
-    margin: 0;
-    font: inherit;
-    color: currentColor;
-    width: .5em;
-    height: .5em;
-    border: 0.15em solid currentColor;
-    border-radius: 0.15em;
-    transform: translateY(-0.075em);
 }
 
 #first-button,
 #second-button {
     /* padding: 30px; */
+    margin-bottom: 40px;
     text-transform: uppercase;
     width: 230px;
-	color: rgba(255, 255, 255, 0.57);
-	background-color: black;
+	color: rgba(255,255,255,.25);
+	background-color: #090d00;
     border-radius: 5px;
     border: white;
     text-align: center;
