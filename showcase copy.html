@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<!--Link to google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+	<!--CDN link to bulma -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+	<!--Link to my css-->
+	<link rel="stylesheet" href="./styles/styles.css">
+  <title>What to Watch: Random Movie Generator</title>
+</head>
+	<body>
+		<div class="container-header is-flex-wrap has-text-centered">
+			<p><span>What to Watch</span>&mdash; Random movie generator &mdash;</p>
+		</div>
+	
+		<div id="genre-select" class="container is-flex-wrap has-text-centered is-hidden">
+			<h2>Choose By Genre</h2>
+				<ul>
+					<li><label class="checkbox"><input id="action" type="radio"> Action</label></li>
+					<li><label class="checkbox"><input id="scifi" type="radio"> SciFi</label></li>
+					<li><label class="checkbox"><input id="comedy" type="radio"> Comedy</label></li>
+					<li><label class="checkbox"><input id="horror" type="radio"> Horror</label></li>
+					<li><label class="checkbox"><input id="drama" type="radio"> Drama</label></li>
+				</ul>
+		</div>
+
+		<div id="rating-select" class="container is-flex-wrap has-text-centered is-hidden">
+		<h2>Choose By Rating</h2>
+			<ul>
+				<li><label class="checkbox"><input type="radio"> * Star</label></li>
+				<li><label class="checkbox"><input type="radio"> ** Stars</label></li>
+				<li><label class="checkbox"><input type="radio"> *** Stars</label></li>
+				<li><label class="checkbox"><input type="radio"> **** Stars</label></li>
+				<li><label class="checkbox"><input type="radio"> ***** Stars</label></li>
+			</ul>
+		</div>
+
+		<div id="top-100-select" class="control is-flex-wrap has-text-centered is-hidden">
+			<h2>Choose from IMDB's Top 100?</h2>
+			<label class="radio">
+				<input id="top-100-yes" type="radio" name="answer">
+				Yes
+			</label>
+			<label class="radio">
+				<input id="top-100-no"  type="radio" name="answer">
+				No
+			</label>
+		</div>
+
+		<div class="container-btn is-flex-wrap has-text-centered">
+			<button id="first-button" class="button is-large is-responsive is-rounded mt-6">Find Your Movie</button>
+			<button id="second-button" class="button is-large is-responsive is-rounded is-hidden">Find Your Movie</button>
+		</div>
+	</body>
+</html>

@@ -1,128 +1,81 @@
 <!DOCTYPE html>
-<html class="has-background-black" lang="en">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3rd page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--Link to google fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+	<!--CDN link to bulma -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+	<!--Link to my css-->
+	<link rel="stylesheet" href="./styles/styles.css">
+	<title>What to Watch: Random Movie Generator</title>
 </head>
-<section class="hero has-background-black is-fullheight">
-    <!-- 3rd IDEA TILES-->
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <p class="title">
-            <img src="styles/images/Screen Shot 2022-12-02 at 5.15.28 PM.png" alt="Logo">
-        </p>
-        <p class="subtitle">
-        </p>
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical">
-              <div class="tile">
-                <div class="tile is-parent is-vertical">
-                  <article class="tile is-child notification has-background-grey-darker">
-                    <p class="title" id="Links to Watch">Links to Watch</p>
-                    <p class="subtitle"><p>
-                  </article>
-                  <article class="tile is-child notification has-background-grey-darker">
-                    <p class="title" id="Movie Title">Movie Title</p>
-                    <p class="subtitle"></p>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child notification has-background-grey-darker">
-                    <p class="title" id="Description">Description</p>
-                    <p class="subtitle"></p>
-                    
-                    </figure>
-                  </article>
-                </div>
-              </div>
-              <div class="tile is-parent">
-                <article class="tile is-child notification has-background-grey-darker">
-                  <p class="title" id ="Rating">Rating</p>
-                  <p class="subtitle"></p>
-                  <div class="content">
-                   
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification has-background-grey-darker">
-                <div class="content">
-                  <p class="title" id="Movie Poster">Movie Poster</p>
-                  <p class="subtitle"></p>
-                  <div class="content">
-                   
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-      </div>
-    </div>
-  
-    <!-- SECOND IDEA, FOOTER NAV BAR -->
-    <!--
-    <div class="hero-foot">
-      <nav class="tabs is-boxed is-fullwidth">
-        <div class="container">
-          <ul>
-            <li class="is-active"><a id="movie poster">Movie Poster</a></li>
-            <li><a id="movie title">Movie Title</a></li>
-            <li><a id="description">Description</a></li>
-            <li><a id="rating">Rating</a></li>
-            <li><a id="links to watch">Links to Watch</a></li>
-            
-          </ul>
-        </div>
-      </nav>
-    </div>
-</section>
--->
-
-<!--ORIGINAL IDEA-->
-<!--
-<body class="has-background-black">
-    <h1 class="" src="styles/images/Screen Shot 2022-12-02 at 5.15.28 PM.png">WHAT TO WATCH</h1>
-    <section class="container has-background-black is-flex-wrap-wrap ">
-
-        <div class="columns is-mobile has-background-grey-darker"></div> 
-        
-        <div class="column is-one-third has-background-grey-darker has-text-grey" 
-        id="movie poster"><div class="column is-4 is-offset-8"></div> <div class="column is-narrow">
-            <div class="box has-background-grey-darker" style="width: 400px; height: 600px">
-        Movie Poster
-        </div>
-
-            <section class="column is-mobile is-4 is-offset-8">
-                <div class="has-background-grey-darker">
-                    <p class="title is-5"></p>
-                    <p class="subtitle"></p>
-                    <div class="column is-one-third my-6 has-background-grey-darker 
-                    has-text-grey"  id="movie title"> <div class="column is-4 is-offset-8"></div>
-                    Movie Title 
-                    </div>
-                    <div class="column is-one-third my-6 has-background-grey-darker 
-                    has-text-grey" 
-                    id="description"> <div class="column is-4 is-offset-8"></div>
-                    Description
-                    </div>
-                    <div class="column is-one-third my-6 has-background-grey-darker has-text-grey" 
-                    id="rating"> <div class="column is-4 is-offset-8"></div>
-                    Rating
-                    </div>
-                    <div class="column is-one-third my-6 has-background-grey-darker has-text-grey" 
-                    id="links to watch"> <div class="column is-4 is-offset-8"></div>
-                    Links to Watch
-                    </div>
-            </section>       
-        </section>
-
-        </h1>
+	<body>
+		<div id="what-to-watch-header" class="container-header has-text-centered ml-auto mr-auto mt-6 mb-6">
+			<span>What to Watch</span>
+			&mdash; Random movie generator &mdash;
+		</div>
 
 
-    -->
-</body>
+		<div id="main-container" class="card p-6 m-6 is-flex is-flex-direction-row has-text-white has-background-black">
+			<div id="movie-poster" class="is-flex is-flex-direction-column p-2 has-background-black">
+			</div>
+			<div id="movie-info" class="is-flex is-flex-direction-column p-2">
+				<div id="movie-title" class="is-flex is-flex-direction-row">
+				</div>
+				<div id="movie-description" class="is-flex is-flex-direction-row">
+				</div>
+				<div id="movie-rating" class="is-flex is-flex-direction-row">
+				</div>
+				<div id="movie-link" class="is-flex is-flex-direction-row">
+				</div>
+			</div>
+
+		</div>
+
+		<!-- <div id="showcase" class="tile is-ancestor p-6">
+
+			<div class="tile is-vertical">
+				<div class="tile">
+					<div class="tile is-parent is-vertical">
+						<article class="tile is-child notification has-background-grey-darker">
+							<p class="title" id="Movie Title">Movie Title</p>
+							<p class="subtitle"></p>
+						</article>
+				</div>
+
+				<div class="tile is-parent">
+					<article class="tile is-child notification has-background-grey-darker">
+						<p class="title" id="Description">Description
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate maxime delectus nemo excepturi odit atque sunt obcaecati labore esse, molestiae veniam totam saepe nulla aspernatur adipisci, velit voluptatem et.
+						</p>
+						<p class="subtitle"></p>
+					</article>
+				</div>
+
+				<div class="tile is-parent">
+					<article class="tile is-child notification has-background-grey-darker">
+						<p class="title" id ="Rating">Rating</p>
+						<p class="subtitle"></p>
+					</article>
+				</div>
+			</div>
+
+			<div class="tile is-parent">
+				<article class="tile is-child notification has-background-grey-darker">
+					<div class="content">
+						<p class="title" id="Movie Poster">Movie Poster</p>
+						<p class="subtitle"></p>
+					</div>
+				</article>
+			</div> -->
+
+		</div>
+	</body>
 </html>
