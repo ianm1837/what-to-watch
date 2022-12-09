@@ -14,7 +14,12 @@ var genreDrama = document.getElementById('drama')
 var top100yes = document.getElementById('top-100-yes')
 var top100no = document.getElementById('top-100-no')
 
-var submitButton = document.getElementById('submit-button')
+var submitButton = document.getElementById('first-button')
+var expandButton = document.getElementById('second-button')
+
+var genreSelect = document.getElementById('genre-select')
+var ratingSelect = document.getElementById('rating-select')
+var top100Select = document.getElementById('top-100-select')
 
 
 // IMDB top 100 movies API
@@ -86,11 +91,13 @@ const getTheMovieDatabaseApi = ()=> {
 	var genreRequestOptions = {
 		method: 'GET',
 		redirect: 'follow'
-	  };
-	  
-	  fetch(`https://api.themoviedb.org/3/discover/movie?api_key=bba539373daca70a2ff171bc45a71196&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${selectedGenre}&vote_average.gte=${selectedMinRating}&vote_average.lte=${selectedMaxRating}`, genreRequestOptions)
+	};
+
+	fetch(`https://api.themoviedb.org/3/discover/movie?api_key=bba539373daca70a2ff171bc45a71196&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${selectedGenre}&vote_average.gte=${selectedMinRating}&vote_average.lte=${selectedMaxRating}`, genreRequestOptions)
 		.then(response => response.json())
 		.then(result => {
+
+			console.log(result)
 			//get page total pages from search results
 			let howManyPages = result.total_pages
 
@@ -121,17 +128,24 @@ const getTheMovieDatabaseApi = ()=> {
 		.then(result => result.json())
 		.then(result => {
 			//update showcase elements with returned API data
-			console.log(result)
 			console.log("Movie Title: " + result.original_title)
+			localStorage.setItem("movie-title", result.original_title)
 			console.log("Movie Overview: " + result.overview)
+			localStorage.setItem("movie-overview", result.overview)
 			console.log("Rating: " + result.vote_average)
+			localStorage.setItem("rating", result.vote_average)
 			console.log("Release Date: " + result.release_date)
+			localStorage.setItem("release-date", result.release_date)
 
 			//poster url: https://image.tmdb.org/t/p/original + posterPath
 			console.log("Poster URL: " + result.poster_path)
+			localStorage.setItem('poster-url', result.poster_path)
 
 			//IMDB page url: https://www.imdb.com/title/ + id		
 			console.log("imdb id: " + result.imdb_id)
+			localStorage.setItem('imdb-id', result.imdb_id)
+
+			location.replace('showcase.html')
 
 
 
@@ -152,5 +166,17 @@ if (top100no.checked){
 
 }
 
+const expandMenu = () => {
+
+	genreSelect.classList.remove('is-hidden')
+	ratingSelect.classList.remove('is-hidden')
+	top100Select.classList.remove('is-hidden')
+	expandButton.classList.add('is-hidden')
+	
+	submitButton.classList.remove('is-hidden')
+	submitButton.addEventListener('click', whichApi)
+}
+
 //even listener for button to call getTheMovieDatabaseApi
-submitButton.addEventListener('click', whichApi)
+
+expandButton.addEventListener('click', expandMenu)
