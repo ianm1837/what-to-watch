@@ -184,7 +184,7 @@ const getTheMovieDatabaseApi = () => {
 
       //poster url: https://image.tmdb.org/t/p/original + posterPath
       console.log("Poster URL: " + result.poster_path);
-      localStorage.setItem("poster-url", result.poster_path);
+      localStorage.setItem("poster-url",  "https://image.tmdb.org/t/p/original" + result.poster_path);
 
       //IMDB page url: https://www.imdb.com/title/ + id
       console.log("imdb id: " + result.imdb_id);
