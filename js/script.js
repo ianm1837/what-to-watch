@@ -89,11 +89,18 @@ const getTheMovieDatabaseApi = () => {
   var selectedMinRating;
   var selectedMaxRating;
 
+
   if (genreAction.checked) {
     selectedGenre = "Action";
+    genreScifi.checked=false
+    genreHorror.checked=false
+    genreComedy.checked=false
+    genreDrama.checked=false
+    
   }
   if (genreScifi.checked) {
     selectedGenre = "Science%20Fiction";
+    
   }
   if (genreComedy.checked) {
     selectedGenre = "Comedy";
@@ -126,11 +133,14 @@ const getTheMovieDatabaseApi = () => {
     selectedMaxRating = 10;
   }
 
+
   //make api call
   var genreRequestOptions = {
     method: "GET",
     redirect: "follow",
   };
+
+
 
   fetch(
     `https://api.themoviedb.org/3/discover/movie?api_key=bba539373daca70a2ff171bc45a71196&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${selectedGenre}&vote_average.gte=${selectedMinRating}&vote_average.lte=${selectedMaxRating}`,
