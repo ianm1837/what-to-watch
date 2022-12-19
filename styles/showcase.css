@@ -27,6 +27,11 @@ span {
 	text-shadow: 0 0 80px rgba(255,255,255,.5);
 }
 
+#movie-poster {
+	width: 20rem;
+	height: auto;
+}
+
 #btn-container {
     text-transform: uppercase;
     width: 230px;

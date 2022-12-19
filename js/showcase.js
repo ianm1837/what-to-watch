@@ -12,7 +12,7 @@ var storedLink = localStorage.getItem('imdb-id')
 
 // storedRating.toString()
 
-moviePoster.innerHTML = `<img src="${storedPoster}">`
+moviePoster.innerHTML = `<img id="movie-poster" src="${storedPoster}">`
 movieTitle.innerHTML = `<h3 class="is-size-2">${storedTitle}</h3>`
 movieDescription.innerHTML = `<p>${storedDescription}</p>`
 movieRating.innerHTML = `${storedRating}`
