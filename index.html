@@ -23,30 +23,6 @@
 		<div class="container-header is-flex-wrap has-text-centered">
 			<p><span>What to Watch</span>&mdash; Random movie generator &mdash;</p>
 		</div>
-	
-		<div id="genre-select" class="container is-flex-wrap has-text-centered is-hidden">
-			<h2>Choose By Genre</h2>
-				<ul>
-					<li><label class="checkbox"><input id="action" type="radio"> Action</label></li>
-					<li><label class="checkbox"><input id="scifi" type="radio"> SciFi</label></li>
-					<li><label class="checkbox"><input id="comedy" type="radio"> Comedy</label></li>
-					<li><label class="checkbox"><input id="horror" type="radio"> Horror</label></li>
-					<li><label class="checkbox"><input id="drama" type="radio"> Drama</label></li>
-				</ul>
-		</div>
-
-		<div id="rating-select" class="container is-flex-wrap has-text-centered is-hidden">
-		<h2>Choose By Rating</h2>
-			<ul>
-				<form>
-				<li><input id="one-star" type="radio"><label for="one-star">☆</label></li>
-				<li><input id="two-star" type="radio"><label for="two-star">☆☆</label></li>
-				<li><input id="three-star" type="radio"><label for="three-star">☆☆☆</label></li>
-				<li><input id="four-star" type="radio"><label for="four-star">☆☆☆☆</label></li>
-				<li><input id="five-star" type="radio"><label for="five-star">☆☆☆☆☆</label></li>
-				</form>
-			</ul>
-		</div>
 
 		<div id="top-100-select" class="control is-flex-wrap has-text-centered is-hidden">
 			<h2>Choose from IMDB's Top 100?</h2>
@@ -55,10 +31,33 @@
 				Yes
 			</label>
 			<label class="radio">
-				<input id="top-100-no"  type="radio" name="answer">
+				<input id="top-100-no" type="radio" name="answer" checked>
 				No
 			</label>
 		</div>
+	
+		<div id="genre-select" class="container is-flex-wrap has-text-centered is-hidden">
+			<h2>Choose By Genre</h2>
+				<ul>
+					<li><label class="checkbox"><input  name="genre" id="action" type="radio" checked> Action</label></li>
+					<li><label class="checkbox"><input  name="genre" id="scifi" type="radio" checked> SciFi</label></li>
+					<li><label class="checkbox"><input  name="genre" id="comedy" type="radio" checked> Comedy</label></li>
+					<li><label class="checkbox"><input  name="genre" id="horror" type="radio"checked> Horror</label></li>
+					<li><label class="checkbox"><input  name="genre" id="drama" type="radio" checked> Drama</label></li>
+				</ul>
+		</div>
+
+		<div id="rating-select" class="container is-flex-wrap has-text-centered is-hidden">
+		<h2>Choose By Rating</h2>
+			<ul>
+				<li><input id="one-star" name="rating" type="radio" checked><label for="one-star">☆</label></li>
+				<li><input id="two-star" name="rating" type="radio" ><label for="two-star">☆☆</label></li>
+				<li><input id="three-star" name="rating" type="radio" ><label for="three-star">☆☆☆</label></li>
+				<li><input id="four-star" name="rating" type="radio" ><label for="four-star">☆☆☆☆</label></li>
+				<li><input id="five-star" name="rating" type="radio" ><label for="five-star">☆☆☆☆☆</label></li>
+			</ul>
+		</div>
+
 
 		<div class="container-btn is-flex-wrap has-text-centered">
 			<button id="first-button" class="button is-large is-responsive is-rounded mt-6 is-hidden">Find Your Movie</button>
