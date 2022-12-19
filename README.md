@@ -4,7 +4,7 @@ What to Watch - Random Movie Generator
 DESCRIPTION:
 
 A random movie generator built from scratch that uses JavaScript and third party APIs for dynamic HTML and CSS elements. 
-You can visit the deployed webpage here: /// 
+You can visit the deployed webpage here: https://ianm1837.github.io/what-to-watch/ 
 Or you can check out the project files in our GitHub repository here: https://github.com/ianm1837/what-to-watch
 
 USER STORY:
