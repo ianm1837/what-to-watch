@@ -23,6 +23,18 @@
 		<div class="container-header is-flex-wrap has-text-centered">
 			<p><span>What to Watch</span>&mdash; Random movie generator &mdash;</p>
 		</div>
+
+		<div id="top-100-select" class="control is-flex-wrap has-text-centered is-hidden">
+			<h2>Choose from IMDB's Top 100?</h2>
+			<label class="radio">
+				<input id="top-100-yes" type="radio" name="answer">
+				Yes
+			</label>
+			<label class="radio">
+				<input id="top-100-no" type="radio" name="answer" checked>
+				No
+			</label>
+		</div>
 	
 		<div id="genre-select" class="container is-flex-wrap has-text-centered is-hidden">
 			<h2>Choose By Genre</h2>
@@ -46,17 +58,6 @@
 			</ul>
 		</div>
 
-		<div id="top-100-select" class="control is-flex-wrap has-text-centered is-hidden">
-			<h2>Choose from IMDB's Top 100?</h2>
-			<label class="radio">
-				<input id="top-100-yes" type="radio" name="answer">
-				Yes
-			</label>
-			<label class="radio">
-				<input id="top-100-no" type="radio" name="answer" checked>
-				No
-			</label>
-		</div>
 
 		<div class="container-btn is-flex-wrap has-text-centered">
 			<button id="first-button" class="button is-large is-responsive is-rounded mt-6 is-hidden">Find Your Movie</button>

@@ -226,6 +226,19 @@ const expandMenu = () => {
   submitButton.addEventListener("click", whichApi);
 };
 
+const checkTop100State = () => {
+	if (top100yes.checked) {
+		genreSelect.classList.add("is-hidden");
+		ratingSelect.classList.add("is-hidden");
+	}
+	if (top100no.checked) {
+		genreSelect.classList.remove("is-hidden");
+		ratingSelect.classList.remove("is-hidden");
+	}
+}
+
 //even listener for button to call getTheMovieDatabaseApi
 
+top100yes.addEventListener("click", checkTop100State)
+top100no.addEventListener("click", checkTop100State)
 expandButton.addEventListener("click", expandMenu);
