@@ -17,21 +17,27 @@
 	<title>What to Watch: Random Movie Generator</title>
 </head>
 	<body>
-		<div id="what-to-watch-header" class="container-header has-text-centered ml-auto mr-auto mt-6 mb-6">
-			<span>What to Watch</span>
-			&mdash; Random movie generator &mdash;
+		<div id="what-to-watch-header" class="container-header is-responsive has-text-centered ml-auto mr-auto mt-6 mb-6">
+			<a href="index.html" style="text-decoration: none; color:  rgb(255 255 255 / 50%);">
+				<span>What to Watch</span>
+				&mdash; Random movie generator &mdash;
+			</a>	
 		</div>
-		<div id="main-container" class="card p-6 m-6 is-flex is-flex-direction-row has-text-white has-background-black">
+		<div id="main-container" class="card p-6 m-6 is-flex is-flex-direction-row is-responsive has-text-white has-background-black">
 			<div id="movie-poster" class="is-flex is-flex-direction-column p-2 has-background-black">
 			</div>
-			<div id="movie-info" class="is-flex is-flex-direction-column p-2">
-				<div id="movie-title" class="is-flex is-flex-direction-row">
+			<!--added font-family copperplate.-->
+			<div id="movie-info" class=" is-flex is-flex-direction-column p-2 is-responsive" style="font-family: Oswald">
+				<div id="movie-title" class="is-flex is-flex-direction-row is-responsive has-text-left is-underlined">
 				</div>
-				<div id="movie-description" class="is-flex is-flex-direction-row">
+				<div id="movie-description" class="is-flex is-flex-direction-row is-responsive has-text-left is-size-3">
+				</div> 
+				<!-- added the word "rating:" so it can be more clear to the user what the rating number indicates-->
+				<P style="margin-right: 600px; text-decoration-line: underline;" class="is-flex is-flex-direction-row is-responsive is-size-4">Rating:</P>
+
+				<div id="movie-rating" class="is-flex is-flex-direction-row is-responsive has-text-left is-size-4">
 				</div>
-				<div id="movie-rating" class="is-flex is-flex-direction-row">
-				</div>
-				<div id="movie-link" class="is-flex is-flex-direction-row">
+				<div id="movie-link" class="is-flex is-flex-direction-row is-responsive has-text-left is-size-4">
 				</div>
 			</div>
 		</div>

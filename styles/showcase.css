@@ -27,6 +27,11 @@ span {
 	text-shadow: 0 0 80px rgba(255,255,255,.5);
 }
 
+#movie-poster {
+	width: 20rem;
+	height: auto;
+}
+
 #btn-container {
     text-transform: uppercase;
     width: 230px;
@@ -43,4 +48,12 @@ span {
     font-size: 30px;
     box-shadow: 0 8px 16px 0 rgba(246, 244, 244, 0.2), 0 6px 20px 0 rgba(218, 212, 212, 0.19);
     cursor: pointer;
+}
+
+#movie-description {
+    color: rgba(255, 255, 255, 0.751);
+}
+
+#movie-info {
+    color: rgba(255, 255, 255, 0.751);
 }
