@@ -92,10 +92,10 @@ const getTheMovieDatabaseApi = () => {
 
   if (genreAction.checked) {
     selectedGenre = "Action";
-    genreScifi.checked=false
-    genreHorror.checked=false
-    genreComedy.checked=false
-    genreDrama.checked=false
+    // genreScifi.checked=false
+    // genreHorror.checked=false
+    // genreComedy.checked=false
+    // genreDrama.checked=false
     
   }
   if (genreScifi.checked) {
